@@ -1,6 +1,6 @@
 {
   "name": "perdix-design-tokens",
-  "version": "0.0.3",
+  "version": "0.0.31",
   "main": "dist/index.js",
   "bin": {
     "perdix": "./dist/index.js"

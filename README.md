@@ -15,7 +15,7 @@ npm install perdix-design-tokens
 javascript :
 
 ```js
-//perdix.config.js
+// perdix.config.js
 module.exports = {
   outputPath: "css/tokens.css",
   rules: "css/tokens/*.json",
@@ -25,7 +25,7 @@ module.exports = {
 json :
 
 ```json
-//perdixrc.json
+// perdixrc.json
 {
   "outputPath": "css/generated.css",
   "rules": "css/tokens/*.json"
@@ -35,7 +35,7 @@ json :
 ### Rules
 
 ```json
-//css/tokens/colors.json
+// css/tokens/colors.json
 [
   {
     "tokens": {
