@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import { existsSync } from "node:fs";
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
@@ -13,7 +14,6 @@ const main = async () => {
   const outputDir = dirname(outputPath);
   if (!existsSync(outputDir)) await mkdir(outputDir);
   const raw = rules.reduce((acc, rule) => acc + processRule(rule), "");
-  // console.log(rules);
 
   const cleanCss = new CleanCss({ level: 2 });
   const { styles, warnings, errors } = cleanCss.minify(raw);

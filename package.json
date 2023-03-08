@@ -1,9 +1,9 @@
 {
   "name": "perdix-design-tokens",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "bin": {
-    "perdix-design-tokens": "./dist/index.js"
+    "perdix": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc",
