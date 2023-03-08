@@ -1,0 +1,4 @@
+{
+  "outputPath": "css/generated.css",
+  "rules": "css/tokens/*.json"
+}
