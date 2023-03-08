@@ -5,7 +5,7 @@ Perdix provides a easy to use and minimalist utility classes generator based on 
 ## Installation
 
 ```bash
-npm install perdix-design-tokens
+pnpm i -D perdix-design-tokens
 ```
 
 ## Configuration
@@ -65,5 +65,5 @@ json :
 ## Cli usage
 
 ```bash
-npm perdix-design-tokens
+pnpm perdix
 ```

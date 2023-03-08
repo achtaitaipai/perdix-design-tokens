@@ -20,6 +20,7 @@ const main = async () => {
   if (errors.length) console.error(errors);
   if (warnings.length) console.error(warnings);
   await writeFile(outputPath, styles);
+  console.log(`${outputPath} generated`);
 };
 
 const processRule = (rules: Rule) => {
@@ -57,11 +58,5 @@ const processPattern = (
 
 const parsePattern = (pattern: string, key: string, value: string) =>
   pattern.replace(/KEY/g, key).replace(/VALUE/g, value);
-
-// const fileContent = (tokens: TokenGroup[]) => {
-//   const cleanCss = new CleanCss({ level: 2 });
-//   const content = cleanCss.minify("");
-//   return content.styles;
-// };
 
 main();
